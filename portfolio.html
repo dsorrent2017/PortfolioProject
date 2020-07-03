@@ -1,0 +1,189 @@
+<!-- Questions from in class exercise Bootstrap-Powered HTML -->
+
+<!-- Students:
+  1. Where is the HTML document drawing its styles from?
+  Bootstrap and font-awesome
+
+  2. How does our browser know which element to style in which way? (ex: button face or background banner)
+  The browser followws the "class" into css files and resolves it that way.
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Coding Boot Camp!</title>
+
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    #images{
+    text-align:center;
+    margin:50px auto; 
+  }
+  #images a{
+      margin:0px 20px;
+      display:inline-block;
+      text-decoration:none;
+      color:black;
+  }
+
+  .caption p{
+          font-size: 28px;
+          font-style:italic;
+  }
+
+  hr {
+    border: 2px solid blue;
+    border-radius: 1px;
+  }
+
+  a{
+   color: blue;
+   font-size: 20px;
+  }
+
+  img.resize {
+    max-width:100%;
+    max-height:100%;
+  }
+  
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Container Div -->
+  <div class="container">
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+     
+      <a class="navbar-brand" href="#">Dan Sorrentino's Project Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacts</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron element -->
+    <div class="jumbotron">
+
+      <!-- centered text -->
+      <h1 class="text-center"><strong>Portfolio</strong></h1>
+      <h2 class="text-center">Full Stack Developer's Bootcamp</h2>
+      <h3 class="text-center">University of Central Florida</h3>
+
+    </div>
+    <div id="images">
+
+    
+    <!-- a Bootstrap row with columns -->
+    <div class="row">
+      <div class="col-lg-12">
+        <a href=" https://dsorrent2017.github.io/ArtGalleriesProject1/">
+          <img class="img center-block" src="./images/artgallery.png"  width="100%">
+        </a>
+        <div class="caption"><p>Click the Screenshot-image above to Operate the Art Galleries Project</p></div>
+        
+        <div>
+            <a href="https://github.com/dsorrent2017/ArtGalleriesProject1.git">Github: Art Gallery Project</a>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12">
+          <a href=" https://dsorrent2017.github.io/hw2-responsive-portfolio/">
+            <img class="img resize" src="./images/PortfolioCode 362.png" width="100%" >
+          </a>
+          <div class="caption"><p>Click the Screenshot-image above to Access the First Porfolio Project</p></div>
+          <div>
+            <a href="https://github.com/dsorrent2017/hw2-responsive-portfolio.git">Github: First Portfolio Project</a>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+
+    
+    <hr>
+    
+    <div class="row">
+      <div class="col-lg-12">
+          <a href="https://dsorrent2017.github.io/3rdPartyAPIs-sorrentino/"></a>
+            <img class="img thumbnail center-block" src="./images/weeklyplanner.gif"  width="100%">
+          </a>
+          <div class="caption"><p>Click the Screenshot-image above to Access the Weekly Planner Project</p></div>
+          
+          <div>
+            <a href="https://github.com/dsorrent2017/3rdPartyAPIs-sorrentino.git">Github: Weelkly Planner Project</a>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    
+    <div class="row">
+      <div class="col-lg-12">
+          <a href="./images/Dan-Sorrentino-Resume.pdf"></a>
+            <img class="img thumbnail center-block" src="./images/resume-latest.png"  width="100%">
+          </a>
+          <div class="caption"><p>Click the Screenshot-image above to view my resume</p></div>
+
+      
+        </div>
+      </div>
+    </div>
+
+  
+    <hr>
+    
+    <div class="row">
+
+      <div class="col-lg-12">
+        <a href="http://linkedin.com/in/daniel-sorrentino">
+          <img class="img thumbnail center-block" src="./images/LinkedIn.png" width="100%">
+        </a>
+        <div class="caption">Click on LinkedIn Image above to be taken to my LinkedIn Page.</p></div>
+      </div> 
+    </div>
+
+
+
+     
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
